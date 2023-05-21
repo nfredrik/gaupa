@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask
 import git
 app = Flask(__name__)
@@ -10,6 +12,7 @@ def hello_world():  # put application's code here
 
 @app.route('/update_server', methods=['POST'])
 def webhook():
+    os.chdir('/home/nfredrik')
     repo = git.Repo('https://github.com/nfredrik/gaupa.git')
     origin = repo.remotes.origin
     origin.pull()
