@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():  # put application's code here
-    return 'Hello POE och Freddan igen!'
+    return 'Hello POE och Freddan lutfisk!'
 
 
 @app.route('/update_server', methods=['POST'])
