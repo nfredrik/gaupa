@@ -13,7 +13,7 @@ def hello_world():  # put application's code here
 @app.route('/update_server', methods=['POST'])
 def webhook():
     os.chdir('/home/nfredrik')
-    repo = git.Repo('https://github.com/nfredrik/gaupa.git')
+    repo = git.Repo('https://github.com/nfredrik/gaupa')
     origin = repo.remotes.origin
     origin.pull()
     return 'Updated PythonAnywhere successfully', 200
