@@ -13,7 +13,6 @@ def hello_world():  # put application's code here
 @app.route('/update_server', methods=['POST'])
 def webhook():
     os.chdir('/home/nfredrik/gaupa')
-    #repo = git.Repo('https://github.com/nfredrik/gaupa')
     repo  = git.Repo()
     origin = repo.remotes.origin
     origin.pull()

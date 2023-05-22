@@ -2,13 +2,16 @@
 name = "gaupa"
 version = "0.1.0"
 description = ""
-authors = ["Fredrik Svärd <fredrik.svard@svenskaspel.se>"]
+authors = ["Fredrik Svärd <nredrik@hotmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
 flask = "^2.3.2"
 gitpython = "^3.1.31"
+
+[tool.poetry.group.test.dependencies]
+pytest="^7.3.1"
 
 
 [build-system]
